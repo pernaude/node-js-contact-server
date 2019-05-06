@@ -96,7 +96,7 @@ express()
       }
       
     }
-    res.send({"error": errorSent, "msg": resultReturned})
+    res.json({"error": errorSent, "msg": resultReturned})
     
     
 
