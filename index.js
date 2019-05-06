@@ -44,7 +44,7 @@ express()
         resultReturned = "Le message est trop court"
       }else{
 
-      msgBuilt = "<div style='max-midth: 600px; margin: 20px auto; font-size: 13px;line-height: 25px; color: #333; font-family: segoe ui; padding: 20px; box-sizing: border-box; border: 1px solid #686868'><b>Nom de l'expéditeur:</b> "+queries.fullname
+      msgBuilt = "<div style='border-radius: 3px; max-width: 600px; margin: 20px auto; font-size: 13px;line-height: 25px; color: #333; font-family: segoe ui; padding: 20px; box-sizing: border-box; border: 1px solid #dedfde'><b>Nom de l'expéditeur:</b> "+queries.fullname
       msgBuilt += "<br/><b>Numéro de téléphone:</b> "+queries.phone
       msgBuilt += "<br/><b>Email de l'expéditeur:</b> "+queries.from
       msgBuilt += "<br/><b>Objet du message:</b> "+queries.subject
