@@ -2,6 +2,7 @@ require("babel-register")
 const nodemailer = require("nodemailer")
 const smtpPool = require('nodemailer-smtp-pool')
 const express = require('express')
+var cors = require("cors")
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 5000
 
 
 express()
+  .use(cors())
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
